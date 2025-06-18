@@ -1,23 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AgGridAngular } from 'ag-grid-angular';
+import { AgGridModule} from 'ag-grid-angular';
 import type { ColDef } from 'ag-grid-community';
-import {
-  colorSchemeDarkBlue,
-  themeQuartz,
-} from "ag-grid-community";
 
 
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet, AgGridAngular],
+  imports: [RouterOutlet, AgGridModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
 export class AppComponent implements OnInit {
-  myTheme = themeQuartz.withPart(colorSchemeDarkBlue);
   rowData: any[] = [];
 
   colDefs: ColDef[] = [
