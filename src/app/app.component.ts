@@ -2,17 +2,22 @@ import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AgGridAngular } from 'ag-grid-angular';
 import type { ColDef } from 'ag-grid-community';
+import {
+  colorSchemeDarkBlue,
+  themeQuartz,
+} from "ag-grid-community";
+
 
 @Component({
-    selector: 'app-root',
-    imports: [RouterOutlet, AgGridAngular],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  standalone: true,
+  selector: 'app-root',
+  imports: [RouterOutlet, AgGridAngular],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
 
 export class AppComponent implements OnInit {
-  title = 'log-surf';
-
+  myTheme = themeQuartz.withPart(colorSchemeDarkBlue);
   rowData: any[] = [];
 
   colDefs: ColDef[] = [
@@ -64,7 +69,330 @@ export class AppComponent implements OnInit {
         level: "ERROR",
         message: "Payment gateway timeout",
         timestamp: "2025-06-15T12:05:00Z"
-      }
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },      {
+        service: "auth-service",
+        level: "INFO",
+        message: "User login successful",
+        timestamp: "2025-06-18T12:00:00Z"
+      },
+      {
+        service: "db-service",
+        level: "WARN",
+        message: "Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected Slow query detected ",
+        timestamp: "2025-06-18T12:10:00Z"
+      },
+      {
+        service: "payment-service",
+        level: "ERROR",
+        message: "Payment gateway timeout",
+        timestamp: "2025-06-15T12:05:00Z"
+      },
     ];
   }
 }

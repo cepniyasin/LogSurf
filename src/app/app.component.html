@@ -1,13 +1,13 @@
 <div class="app-container">
-  <h1 class="app-title">📜 Docker Logs Viewer</h1>
-
+  <h1 class="app-title">Docker Logs Viewer</h1>
   <ag-grid-angular
-    class="ag-theme-alpine logs-grid"
+    style="width: 100%; height: 100%;"
+    class="ag-theme-quartz-dark"
+    [theme]="myTheme"
     [rowData]="rowData"
     [columnDefs]="colDefs"
     [defaultColDef]="defaultColDef"
     [paginationPageSize]="10"
-  ></ag-grid-angular>
-
+  />
   <router-outlet></router-outlet>
 </div>
