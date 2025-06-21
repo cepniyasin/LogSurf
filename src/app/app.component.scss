@@ -8,3 +8,21 @@
 .app-title {
   text-align: center;
 }
+
+.log-error {
+  color: red;
+  font-weight: bold;
+}
+.log-warn {
+  color: orange;
+}
+.log-info {
+  color: blue;
+}
+.log-debug {
+  color: green;
+}
+.log-trace {
+  color: gray;
+  font-style: italic;
+}
