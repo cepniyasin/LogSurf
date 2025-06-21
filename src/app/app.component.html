@@ -1,5 +1,8 @@
 <div class="app-container">
   <h1 class="app-title">Docker Logs Viewer</h1>
+  <div class="refresh-button-div">
+    <button (click)="fetchLogs()" class="refresh-button"> Refresh Logs </button>
+  </div>
   <ag-grid-angular
     style="width: 100%; height: 100%;"
     class="ag-theme-alpine-dark"

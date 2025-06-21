@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { AgGridModule } from 'ag-grid-angular';
 import type { ColDef } from 'ag-grid-community';
 import {parseSpringLogs, SpringLog} from "./util/parse-spring-logs";
+import {interval, Subscription} from "rxjs";
 
 @Component({
   standalone: true,
@@ -12,7 +13,8 @@ import {parseSpringLogs, SpringLog} from "./util/parse-spring-logs";
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  rowData: any[] = [];
+  rowData: SpringLog[] = [];
+  refreshSub!: Subscription;
 
   colDefs: ColDef[] = [
     {
@@ -49,7 +51,11 @@ export class AppComponent implements OnInit {
   };
 
   ngOnInit() {
+    this.fetchLogs();
+    // this.refreshSub = interval(5000).subscribe(() => this.fetchLogs());
+  }
 
+  fetchLogs() {
     fetch('assets/application.log')
       .then(res => res.text())
       .then(text => {
