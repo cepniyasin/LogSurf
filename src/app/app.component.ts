@@ -35,10 +35,11 @@ export class AppComponent implements OnInit {
     { field: 'level', headerName: 'Level', filter: true, sortable: true,
       cellClass: params => this.getLevelClass(params.value)
     },
+    // { field: 'pid', headerName: 'PID', filter: true, sortable: true },
     // { field: 'thread', headerName: 'Thread', filter: true, sortable: true },
     // { field: 'logger', headerName: 'Logger', filter: true, sortable: true },
     { field: 'message', headerName: 'Message', flex: 2, wrapText: true, autoHeight: true },
-    { field: 'exception', headerName: 'Exception', flex: 2, wrapText: true, autoHeight: true }
+    // { field: 'exception', headerName: 'Exception', flex: 2, wrapText: true, autoHeight: true }
   ];
 
   defaultColDef: ColDef = {

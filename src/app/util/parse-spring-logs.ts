@@ -5,7 +5,6 @@ export interface SpringLog {
   thread?: string;
   logger?: string;
   message: string;
-  exception?: string;
 }
 
 export function parseSpringLogs(logText: string): SpringLog[] {
@@ -29,10 +28,9 @@ export function parseSpringLogs(logText: string): SpringLog[] {
         thread: line.match(/\[.*?\]/)?.[0].replace(/\[|\]/g, ''),
         logger: line.split('---').pop()?.split(':')[0]?.trim(),
         message: line.split(':').slice(1).join(':').trim(),
-        exception: ''
       };
     } else if (currentLog && line.trim()) {
-      currentLog.exception += (currentLog.exception ? '\n' : '') + line;
+      currentLog.message += line;
     }
   }
 
