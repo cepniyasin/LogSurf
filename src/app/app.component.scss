@@ -9,19 +9,23 @@
   text-align: center;
 }
 
+::ng-deep
 .log-error {
   color: red;
   font-weight: bold;
 }
+
+::ng-deep
 .log-warn {
   color: orange;
 }
-.log-info {
-  color: blue;
-}
+
+::ng-deep
 .log-debug {
   color: green;
 }
+
+::ng-deep
 .log-trace {
   color: gray;
   font-style: italic;
@@ -51,3 +55,10 @@
 .refresh-button:active {
   background-color: #023981;
 }
+
+//.container {
+//  height: 100px;
+//  overflow: auto;
+//  display: flex;
+//  flex-direction: column-reverse;
+//}
